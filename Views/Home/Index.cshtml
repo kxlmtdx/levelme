@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="split-container" style="margin-top: 90px">
+    <div class="left-screen">
+        <img src="https://i.pinimg.com/736x/e1/a2/4b/e1a24b5fc65dc9ab0710389228b19677.jpg " alt="да ну насмерть" class="characters-image">
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Взгляните на себя с другой стороны.</h1>
+                <p>
+                    Вся твоя жизнь в пятиугольнике! Делаем? - Делаем! Всё в двух словах не описать, стоит попробовать
+                </p>
+            </div>
+        </section>
+    </div>
+    <div class="right-screen">
+        <div class="registration-form" style="color: #FFF">
+            <h2 style="text-align: center">Бесплатная регистрация</h2>
+            <p>
+                Имя пользователя должно быть длиной от 1 до 20 символов, содержащее буквы от а до z, цифры от 0 до 9, дефисы или подчеркивания и не может содержать запрещенные слова.
+            </p>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="username">Имя пользователя</label>
+                    <input type="text" id="username" placeholder="Введите имя пользователя" required>
+                    <div id="usernameError" class="error-message" style="color: red; display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" placeholder="Введите email" required>
+                    <div id="emailError" class="error-message" style="color: red; display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="Введите пароль" required>
+                    <div id="passwordError" class="error-message" style="color: red; display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Подтвердите пароль</label>
+                    <input type="password" id="confirm-password" placeholder="Подтвердите пароль" required>
+                    <div id="confirmPasswordError" class="error-message" style="color: red; display: none;"></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" style="background: #5c6dff">Регистрация</button>
+                </div>
+                <div class="or-separator">
+                    <hr style="border: 1px dashed #ccc; width: 100%; margin: 20px 0;">
+                    <span>или</span>
+                </div>
+                <div class="social-buttons">
+                    <button type="button" class="social-button">
+                        <img src="https://i.postimg.cc/13vd7MZk/google-1.png" alt="Google" class="social-icon">
+                        Зарегистрироваться с помощью Google
+                    </button>
+                    <button type="button" class="social-button">
+                        <img src="https://i.postimg.cc/xdg475Vr/apple.png " alt="Apple" class="social-icon">
+                        Зарегистрироваться с помощью Apple
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-message" style="color: white">
+    <img src="https://i.pinimg.com/736x/9f/1a/8a/9f1a8ac9d12ca3323af34f22ae0ca425.jpg" alt="Персонажи Habitica" class="characters-image" style="width: 350px; height: 350px">
+    Это приложение недоступно на мобильных устройствах. Пожалуйста, используйте планшет или компьютер.
+</div>
+
+<div class="floating-element floating-heart" style="top: 100px; left: 50px;"></div>
+<div class="floating-element floating-star" style="top: 200px; right: 100px;"></div>
+<div class="floating-element floating-dragon" style="top: 300px; left: 200px;"></div>
+
+<script type="module" src="/js/auth.js"></script>
+<script type="module" src="/js/register.js"></script>
+
